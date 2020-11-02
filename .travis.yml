@@ -1,3 +1,5 @@
+dist: focal
+sudo: true
 language: ruby
 rvm:
   - 2.7.1
