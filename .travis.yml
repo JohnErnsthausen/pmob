@@ -5,6 +5,8 @@ rvm:
   - 2.7.1
 
 script:
+ - rvm list
+ - rvm use 2.7.1
  - JEKYLL_ENV=production bundle exec jekyll build
  - bundle exec htmlproofer ./build
 
