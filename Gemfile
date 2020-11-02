@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 ruby '2.7.1'
 gem 'jekyll', '~> 4.1'
 gem 'uglifier'
-gem 'github-pages'
 gem "html-proofer"
 
 group :jekyll_plugins do
