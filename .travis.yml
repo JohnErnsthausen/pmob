@@ -22,7 +22,7 @@ cache: bundler
 notifications:
   email:
     recipients:
+      - jeff@langrsoft.com
       - john@smartypixels.com
-      - johnernsthausen@gmail.com
     on_success: change
     on_failure: always
