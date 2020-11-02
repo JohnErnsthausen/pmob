@@ -3,7 +3,7 @@ ruby '2.7.1'
 gem 'jekyll'
 gem 'uglifier'
 gem 'github-pages'
-gem 'sprockets', "~> 3.7"
+gem "html-proofer"
 
 group :jekyll_plugins do
   gem 'jekyll-gist'
