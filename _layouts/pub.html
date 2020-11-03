@@ -22,13 +22,7 @@
     <div class="grid">
       <div class="content">
         <div class="indent">
-          <nav class="back">
-            <a href="{{ page.backsite }}"><p><i class="fas fa-chevron-left"></i> Back<p></a>
-          </nav>
-          {% if page.tagline %}
-          <p class="tagline">{{ page.tagline }}</p>
-          {% endif %}
-
+          <h1 class="editable">Welcome to {{page.pub-name}}</h1>
           <section class="about">
             <article class="tender">
               <h3>Your {{ site.session-lead-term }}: {{page.session-lead-name}}</h3>
