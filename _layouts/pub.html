@@ -33,14 +33,9 @@
           <section class="about">
             <article class="tender">
               <h3>Your {{ site.session-lead-term }}: {{page.session-lead-name}}</h3>
-              <div><img class="photo" src="/assets/images/{{ page.id }}.{{page.session-lead-photo-extension}}" /></div>
-
+              <img class="photo" src="/assets/images/{{ page.id }}.{{page.session-lead-photo-extension}}" />
               <h3>About {{ page.session-lead-short-name }}</h3>
-
-
               <p>{{ page.session-lead-blurb }}</p>
-
-
               <h3>About {{ page.pub-name }}</h3>
               <div>
               {{ content | markdownify }}
@@ -48,30 +43,19 @@
             </article>
 
             <article class="pubDetails">
-              <div>
-                <p>{{ page.pub-summary-twenty-words }}</p>
-                {% if page.pub-photo %}
-                <figure>
-                  <img src="/assets/images/{{ page.id }}/{{ page.pub-photo }}" />
-                  {% if page.pub-photo-caption %}
-                  <figcaption>{{ page.pub-photo-caption }}</figcaption>
-                  {% endif %}
-                </figure>
+              <p>{{ page.pub-summary-twenty-words }}</p>
+              {% if page.pub-photo %}
+              <figure>
+                <img src="/assets/images/{{ page.id }}/{{ page.pub-photo }}" />
+                {% if page.pub-photo-caption %}
+                <figcaption>{{ page.pub-photo-caption }}</figcaption>
                 {% endif %}
-              </div>
+              </figure>
+              {% endif %}
             </article>
-
           </section>
-
-          <!--<section class="openEndedPubMarkdown">
-            <div>
-            {{ content | markdownify }}
-            </div>
-          </section>
-          -->
 
           <section>
-
             {% assign books = site.books | where: "session-lead-id", page.session-lead-id | sort: "year" %}
             {% if books.size > 0 %}
               <h3>{{ page.session-lead-short-name }}'s Books</h3>
@@ -98,21 +82,19 @@
 
           {{ page.post-content }}
 
-            <div>
-          </div>  
         </div>
       </div>
     </div>
 	
+    <footer>
       <div class="footerbar"></div>
       <div class="grid">
         <div class="content">
           <div class="indent">
-    <footer>
           {% include footer.html %}
-    </footer>
           </div>
         </div>
       </div>
+    </footer>
   </body>
 </html>
