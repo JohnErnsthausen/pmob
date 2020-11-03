@@ -30,7 +30,7 @@
           <p class="tagline">{{ page.tagline }}</p>
           {% endif %}
 
-          <section class="about-session-lead">
+          <section class="about">
             <article class="tender">
               <h3>Your {{ site.session-lead-term }}: {{page.session-lead-name}}</h3>
               <div><img class="photo" src="/assets/images/{{ page.id }}.{{page.session-lead-photo-extension}}" /></div>
@@ -104,15 +104,5 @@
       </div>
     </div>
 	
-    <footer>
-      <div class="footerbar"></div>
-      <div class="grid">
-        <div class="content">
-          <div class="indent">
-          {% include footer.html %}
-          </div>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
