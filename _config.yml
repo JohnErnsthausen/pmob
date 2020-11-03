@@ -94,3 +94,6 @@ collections:
 
 session-lead-term: session lead
 session-lead-term-plural: session leads
+
+_editor:
+  default_path: /pubs/
