@@ -2,8 +2,8 @@
   @extend .interior;
   #navtenders { @extend %active; }
 
-  $size_about_left: 50%;
-  $size_about_right: 50%;
+  $size_about_left: 45%;
+  $size_about_right: 45%;
 
   .openEndedPubMarkdown {
     border-top: 3px solid #000; 
