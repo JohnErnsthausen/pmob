@@ -9,7 +9,7 @@ before_script:
   
 script:
  - JEKYLL_ENV=production bundle exec jekyll build
- - bundle exec htmlproofer ./build --empty-alt-ignore
+ - bundle exec htmlproofer ./build --empty-alt-ignore --disable_external
 
 cache: bundler
 
