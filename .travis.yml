@@ -5,17 +5,11 @@ rvm:
   - 2.7.1
 
 before_script:
- - rvm list
- - rvm use 2.7.1
+ - ruby -v
   
 script:
  - JEKYLL_ENV=production bundle exec jekyll build
  - bundle exec htmlproofer ./build --empty-alt-ignore
-
-addons:
-  apt:
-    packages:
-    - libcurl4-openssl-dev
 
 cache: bundler
 
